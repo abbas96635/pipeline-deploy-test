@@ -1,9 +1,11 @@
 
-# Auto-generated Pipeline
-pipeline_name = "AQI_Pipeline"
-version = "v3.0"
+from airflow import DAG
+from airflow.operators.python import PythonOperator
+from datetime import datetime
 
-pipeline_definition = {
+def run_pipeline():
+    print("Running AQI_Pipeline version v3.0")
+    print({
     "edges": [
         {
             "id": "xy-edge__dndnode_0_1774006439144output-dndnode_0_1774006439144-dndnode_1_1774008008276input-dndnode_1_1774008008276",
@@ -888,4 +890,20 @@ pipeline_definition = {
             "selected": false
         }
     ]
+})
+
+default_args = {
+    'owner': 'airflow',
 }
+
+with DAG(
+    dag_id="AQI_Pipeline",
+    start_date=datetime(2024, 1, 1),
+    schedule_interval=None,
+    catchup=False
+) as dag:
+
+    task = PythonOperator(
+        task_id="run_pipeline",
+        python_callable=run_pipeline
+    )
