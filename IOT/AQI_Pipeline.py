@@ -1,9 +1,9 @@
 
-    # Auto-generated Pipeline
-    pipeline_name = "AQI_Pipeline"
-    version = "v3.0"
+# Auto-generated Pipeline
+pipeline_name = "AQI_Pipeline"
+version = "v3.0"
 
-    pipeline_definition = {
+pipeline_definition = {
     "edges": [
         {
             "id": "xy-edge__dndnode_0_1774006439144output-dndnode_0_1774006439144-dndnode_1_1774008008276input-dndnode_1_1774008008276",
@@ -889,4 +889,3 @@
         }
     ]
 }
-    
