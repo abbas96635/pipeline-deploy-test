@@ -1,7 +1,7 @@
 {
   "pipeline_name": "AQI_Pipeline",
   "domain": "IOT",
-  "version": "2.0",
+  "version": "4.0",
   "definition": {
     "edges": [
       {
@@ -153,35 +153,6 @@
       }
     ],
     "nodes": [
-      {
-        "id": "dndnode_1_1774008008276",
-        "data": {
-          "label": "Type Conversion",
-          "config": {
-            "columns": [
-              "TREND_PACKET_DATE"
-            ],
-            "dataType": "date",
-            "writeMode": "replace",
-            "conversionType": "cast"
-          }
-        },
-        "type": "Type Conversion",
-        "style": {
-          "width": 198,
-          "height": 70
-        },
-        "dragging": false,
-        "measured": {
-          "width": 198,
-          "height": 70
-        },
-        "position": {
-          "x": 567.0939999999999,
-          "y": -73.45399796549478
-        },
-        "selected": false
-      },
       {
         "id": "dndnode_3_1774008185528",
         "data": {
