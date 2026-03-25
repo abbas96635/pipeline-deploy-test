@@ -1,7 +1,7 @@
 {
   "pipeline_name": "AQI_Pipeline",
   "domain": "IOT",
-  "version": "6.0",
+  "version": "4.0",
   "definition": {
     "edges": [
       {
@@ -158,7 +158,7 @@
         "data": {
           "label": "Data Source",
           "config": {
-            "path": "/IOT/IOT_cmvsummary_data_new2",
+            "path": "/IOT/IOT_cmvsummary_data_new1",
             "format": "parquet"
           }
         },
