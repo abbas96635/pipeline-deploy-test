@@ -187,7 +187,7 @@
         "data": {
           "label": "Data Source",
           "config": {
-            "path": "/IOT/IOT_cmvsummary_data_new1",
+            "path": "/IOT/IOT_cmvsummary_data",
             "format": "parquet"
           }
         },
@@ -831,17 +831,6 @@
           "y": 257.50782488990194
         },
         "selected": false
-      },
-      {
-        "id": "test_node",
-        "data": {
-          "label": "New Node"
-        },
-        "type": "Test",
-        "position": {
-          "x": 0,
-          "y": 0
-        }
       }
     ]
   }
